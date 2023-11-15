@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "shellpass",
+    "slug": "shellpass",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icone1.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/perolaW.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFD859",
+      "plugins": [
+        [
+          "expo-location",
+          {
+            "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+          }
+        ]
+      ]
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera permission is required to scan QR codes",
+        "NSMicrophoneUsageDescription": "Microphone permission is required for QR code scanning"
+      },
+      "bundleIdentifier": "com.jsvictorias.kauzen"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icone1.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.jsvictorias.kauzen"
+    },
+    "web": {
+      "favicon": "./assets/icone1.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "389c73c8-fcee-4553-a4cc-1800f028efe5"
+      }
+    }
+  }
+}
